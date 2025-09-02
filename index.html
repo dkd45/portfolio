@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="https://img.icons8.com/?size=100&id=ateR0Zl4Oy0Y&format=png&color=000000" />
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=ateR0Zl4Oy0Y&format=png&color=000000" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deepak Kumar Das - Cloud Engineer</title>
     <style>
@@ -599,7 +599,7 @@
             <h2>My Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-icon">☁</div>
+                    <div class="skill-icon">☁️</div>
                     <h3>Cloud Platforms</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">AWS</span>
@@ -665,7 +665,7 @@
 
                 <div class="project-card" onclick="openProjectModal('project2')">
                     <div class="project-header">
-                        <div class="project-icon">⚙</div>
+                        <div class="project-icon">⚙️</div>
                         <h3>Kubernetes Deployment</h3>
                     </div>
                     <div class="project-body">
@@ -873,11 +873,11 @@
                     <p style="color: var(--text-light); margin-bottom: 2rem;">${project.description}</p>
                     <h4 style="margin-bottom: 1rem;">Project Details:</h4>
                     <ul style="margin-bottom: 2rem; padding-left: 1.5rem;">
-                        ${project.details.map(detail => <li style="margin-bottom: 0.5rem; color: var(--text-light);">${detail}</li>).join('')}
+                        ${project.details.map(detail => `<li style="margin-bottom: 0.5rem; color: var(--text-light);">${detail}</li>`).join('')}
                     </ul>
                     <h4 style="margin-bottom: 1rem;">Technologies Used:</h4>
                     <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                        ${project.technologies.map(tech => <span style="background: var(--primary-color); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">${tech}</span>).join('')}
+                        ${project.technologies.map(tech => `<span style="background: var(--primary-color); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">${tech}</span>`).join('')}
                     </div>
                 `;
                 modal.style.display = 'flex';
